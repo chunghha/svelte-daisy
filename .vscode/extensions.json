@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"svelte.svelte-vscode",
+		"ardenivanov.svelte-intellisense",
+		"aaron-bond.better-comments",
+		"csstools.postcss",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"ms-playwright.playwright",
+		"zixuanchen.vitest-explorer"
+	]
+}
