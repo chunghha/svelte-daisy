@@ -19,7 +19,7 @@
 			</label>
 			<ul
 				tabindex="0"
-				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 shadow"
+				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
 			>
 				<li><a href="/">Homepage</a></li>
 				<li><a href="/about">About</a></li>
@@ -28,6 +28,6 @@
 	</div>
 	<div class="navbar-center">
 		<!-- svelte-ignore a11y-missing-attribute -->
-		<a class="upper-case btn btn-ghost text-xl text-primary">Countries</a>
+		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">Countries</a>
 	</div>
 </div>

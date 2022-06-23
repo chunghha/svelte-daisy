@@ -9,13 +9,13 @@
 >
 	<figure><img src={country.flags.svg} alt={country.name.official} /></figure>
 	<div class="card-body">
-		<h2 class="card-title text-secondary">{country.name.official}</h2>
-		<p class="text-warning">{country.capital ?? ''}</p>
+		<h2 class="card-title font-poppins text-secondary">{country.name.official}</h2>
+		<p class="font-inter text-xl text-warning">{country.capital ?? ''}</p>
 		{#if country.population > 0}
-			<p class="text-info">{country.population.toLocaleString()}</p>
+			<p class="font-inter text-lg text-info">{country.population.toLocaleString()}</p>
 		{/if}
 		<div class="card-actions justify-end">
-			<button class="btn-neutral btn">Details</button>
+			<button class="btn-neutral btn font-poppins">Details</button>
 		</div>
 	</div>
 </div>
