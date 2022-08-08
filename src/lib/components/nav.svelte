@@ -1,4 +1,10 @@
-<div class="navbar bg-base-100">
+<script lang="ts">
+import Themeswitcher from "./themeswitcher.svelte";
+
+
+</script>
+
+<div class="navbar bg-neutral shadow-md">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -30,4 +36,7 @@
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">Countries</a>
 	</div>
+  <div class="navbar-end">
+    <Themeswitcher />
+  </div>
 </div>
