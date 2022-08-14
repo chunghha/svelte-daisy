@@ -29,12 +29,13 @@ import Themeswitcher from "./themeswitcher.svelte";
 			>
 				<li><a href="/">Homepage</a></li>
 				<li><a href="/about">About</a></li>
+				<li><a href="/country">Country</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="navbar-center">
 		<!-- svelte-ignore a11y-missing-attribute -->
-		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">Countries</a>
+		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">daisyUI</a>
 	</div>
   <div class="navbar-end">
     <Themeswitcher />

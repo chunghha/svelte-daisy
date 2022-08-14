@@ -4,5 +4,5 @@ import Nav from '../lib/components/nav.svelte';
 it('has the heading text for "Countries"', () => {
   const { getByText } = render(Nav);
 
-  expect(getByText('Countries')).toBeTruthy();
+  expect(getByText('daisyUI')).toBeTruthy();
 });
