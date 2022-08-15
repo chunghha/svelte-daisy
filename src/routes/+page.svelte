@@ -1,8 +1,5 @@
 <script context="module">
-  import '@fontsource/inter/index.css';
-  import '@fontsource/poppins/index.css';
-  import Hero from "../lib/components/hero.svelte";
-
+import Hero from "../lib/components/hero.svelte";
 
 	export const prerender = true;
 </script>
