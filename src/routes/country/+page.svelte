@@ -1,10 +1,10 @@
 <script lang="ts">
 	import CountryCard from '$lib/components/countrycard.svelte';
 	import type { Country } from '$lib/models/country';
+	import '@fontsource/fira-mono/index.css';
 	import '@fontsource/inter/index.css';
 	import '@fontsource/poppins/index.css';
-	import '@fontsource/space-mono/index.css';
-	import { fetchCountries } from '../../utils';
+	import { fetchCountries } from './country.service';
 
 	let countries: Country[] = [];
 
