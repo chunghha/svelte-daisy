@@ -1,12 +1,11 @@
 <script lang="ts">
-import Themeswitcher from "./themeswitcher.svelte";
-
-
+	import Themeswitcher from './themeswitcher.svelte';
 </script>
 
 <div class="navbar bg-neutral shadow-md">
 	<div class="navbar-start">
 		<div class="dropdown">
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label tabindex="0" class="btn btn-ghost btn-circle">
 				<svg
@@ -23,6 +22,7 @@ import Themeswitcher from "./themeswitcher.svelte";
 					/></svg
 				>
 			</label>
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul
 				tabindex="0"
 				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
@@ -37,7 +37,7 @@ import Themeswitcher from "./themeswitcher.svelte";
 		<!-- svelte-ignore a11y-missing-attribute -->
 		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">daisyUI</a>
 	</div>
-  <div class="navbar-end">
-    <Themeswitcher />
-  </div>
+	<div class="navbar-end">
+		<Themeswitcher />
+	</div>
 </div>
