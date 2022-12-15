@@ -1,3 +1,7 @@
+export interface CountryResponse {
+  countries: Country[]
+}
+
 export interface Country {
   cioc: string;
   capital: string[];
