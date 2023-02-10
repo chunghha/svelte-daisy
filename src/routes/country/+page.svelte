@@ -1,17 +1,33 @@
 <script lang="ts">
 	import CountryCard from '$lib/components/countrycard.svelte';
-	import type { CountryResponse } from '../../lib/models/country';
+	import { createQuery } from '@tanstack/svelte-query';
 
-	export let data: CountryResponse;
+	const getCountries = async () => {
+		const res = await fetch('https://restcountries.com/v3.1/all');
+		return await res.json();
+	};
+
+	const query = createQuery({
+		queryKey: ['countries'],
+		queryFn: getCountries
+	});
 </script>
 
 <svelte:head>
 	<title>Countries</title>
 </svelte:head>
 
-{#if data.countries.length > 0}
+{#if $query.status === 'loading'}
+	<p>Loading...</p>
+{/if}
+
+{#if $query.status === 'error'}
+	<p>Error :(</p>
+{/if}
+
+{#if $query.status === 'success'}
 	<div class="mt-4 grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-		{#each data.countries as country}
+		{#each $query.data as country}
 			<CountryCard {country} />
 		{/each}
 	</div>
