@@ -4,10 +4,10 @@
 
 <div class="navbar bg-neutral shadow-md">
 	<div class="navbar-start">
-		<div class="dropdown">
+		<div class="dropdown z-[1000]">
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label tabindex="0" class="btn btn-ghost btn-circle">
+			<label tabindex="0" class="btn-ghost btn-circle btn">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-5 w-5"
@@ -25,7 +25,7 @@
 			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<ul
 				tabindex="0"
-				class="dropdown-content menu rounded-box menu-compact mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
+				class="menu-compact dropdown-content menu rounded-box mt-3 w-52 bg-base-100 p-2 font-poppins shadow"
 			>
 				<li><a href="/">Homepage</a></li>
 				<li><a href="/about">About</a></li>
@@ -35,7 +35,7 @@
 	</div>
 	<div class="navbar-center">
 		<!-- svelte-ignore a11y-missing-attribute -->
-		<a class="upper-case btn btn-ghost font-poppins text-xl text-primary">daisyUI</a>
+		<a class="upper-case btn-ghost btn font-poppins text-xl text-primary">daisyUI</a>
 	</div>
 	<div class="navbar-end">
 		<Themeswitcher />
