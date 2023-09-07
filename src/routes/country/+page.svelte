@@ -18,7 +18,7 @@
 </svelte:head>
 
 {#if $query.status === 'loading'}
-	<p>Loading...</p>
+	<span class="loading loading-ring loading-lg" />
 {/if}
 
 {#if $query.status === 'error'}
