@@ -17,7 +17,7 @@
 	<title>Countries</title>
 </svelte:head>
 
-{#if $query.status === 'loading'}
+{#if $query.status === 'pending'}
 	<span class="loading loading-ring loading-lg" />
 {/if}
 

@@ -2,6 +2,7 @@
 	import { browser } from '$app/environment';
 	import Nav from '$lib/components/nav.svelte';
 	import { QueryClient, QueryClientProvider } from '@tanstack/svelte-query';
+	import { SvelteQueryDevtools } from '@tanstack/svelte-query-devtools';
 	import '../app.css';
 
 	const queryClient = new QueryClient({
@@ -17,6 +18,7 @@
 	<div class="max-w-8xl mx-auto pt-4 pr-8 pb-8 pl-8">
 		<Nav />
 		<slot />
+		<SvelteQueryDevtools initialIsOpen={false} />
 	</div>
 </QueryClientProvider>
 

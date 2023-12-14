@@ -12,5 +12,11 @@
 			"source.fixAll.eslint": true,
 			"source.organizeImports": true
 		}
+	},
+	"[svelte][typescript]": {
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit",
+			"source.organizeImports": "explicit"
+		}
 	}
 }
