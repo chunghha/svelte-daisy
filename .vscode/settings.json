@@ -1,22 +1,10 @@
 {
-	"[typescript]": {
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": true,
-			"source.organizeImports": true
-		}
-	},
-	"[svelte]": {
-		"editor.formatOnSave": true,
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": true,
-			"source.organizeImports": true
-		}
-	},
-	"[svelte][typescript]": {
-		"editor.codeActionsOnSave": {
-			"source.fixAll.eslint": "explicit",
-			"source.organizeImports": "explicit"
-		}
-	}
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "quickfix.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
 }

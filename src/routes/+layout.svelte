@@ -1,17 +1,17 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-	import Nav from '$lib/components/nav.svelte';
-	import { QueryClient, QueryClientProvider } from '@tanstack/svelte-query';
-	import { SvelteQueryDevtools } from '@tanstack/svelte-query-devtools';
-	import '../app.css';
+import { browser } from '$app/environment'
+import Nav from '$lib/components/nav.svelte'
+import { QueryClient, QueryClientProvider } from '@tanstack/svelte-query'
+import { SvelteQueryDevtools } from '@tanstack/svelte-query-devtools'
+import '../app.css'
 
-	const queryClient = new QueryClient({
-		defaultOptions: {
-			queries: {
-				enabled: browser
-			}
-		}
-	});
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      enabled: browser,
+    },
+  },
+})
 </script>
 
 <QueryClientProvider client={queryClient}>
