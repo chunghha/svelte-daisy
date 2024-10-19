@@ -1,5 +1,5 @@
-<script context="module">
-	import Hero from '../lib/components/hero.svelte';
+<script module>
+import Hero from '../lib/components/hero.svelte'
 </script>
 
 <svelte:head>

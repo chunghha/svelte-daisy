@@ -1,5 +1,5 @@
-import '@fontsource/fira-mono/index.css';
-import '@fontsource/inter/index.css';
-import '@fontsource/poppins/index.css';
+import '@fontsource/fira-mono/index.css'
+import '@fontsource/mulish/index.css'
+import '@fontsource/tienne/index.css'
 
-export const prerender = true;
+export const prerender = true
