@@ -25,7 +25,7 @@ import { counter, decrease, increase } from '../stores/counter.store'
 	</div>
 	<div class="m-2 text-center font-tienne text-neutral-content">
 		<button class="btn btn-circle btn-sm mr-2 text-accent" onclick={decrease}>-</button>
-		Counter: {counter}
+		Counter: {$counter}
 		<button class="btn btn-circle btn-sm ml-2 text-accent" onclick={increase}>+</button>
 	</div>
 </template>

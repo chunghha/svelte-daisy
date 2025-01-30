@@ -30,7 +30,6 @@ import Themeswitcher from './themeswitcher.svelte'
         <li><a href="/">Homepage</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/country">Country</a></li>
-        <li><a href="/bits">Bits UI</a></li>
       </ul>
     </div>
   </div>

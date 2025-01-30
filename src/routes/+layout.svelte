@@ -20,7 +20,7 @@ const queryClient = new QueryClient({
 </script>
 
 <QueryClientProvider client={queryClient}>
-	<div class="max-w-8xl mx-auto pt-4 pr-8 pb-8 pl-8">
+	<div class="max-w-8xl mx-auto pt-4 pr-8 pb-8 pl-8 min-h-screen">
 		<Nav />
 		{@render children?.()}
 		<SvelteQueryDevtools initialIsOpen={false} />
