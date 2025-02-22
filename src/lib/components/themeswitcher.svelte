@@ -2,8 +2,8 @@
 import { isDark, toggle } from '../stores/theme.store'
 
 const THEMES = {
-  DARK: 'rosepine',
-  LIGHT: 'dawn',
+  DARK: 'dark',
+  LIGHT: 'light',
 }
 
 const toggleTheme = () => {

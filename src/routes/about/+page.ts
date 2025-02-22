@@ -1,4 +1,4 @@
-import '@fontsource/mulish/index.css'
-import '@fontsource/tienne/index.css'
+import '@fontsource/mulish'
+import '@fontsource/tienne'
 
 export const prerender = true

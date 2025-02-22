@@ -17,7 +17,7 @@
     "enabled": true
   },
   "files": {
-    "ignore": ["*.gen.ts"]
+    "ignore": ["*.gen.ts", "src/app.css"]
   },
   "formatter": {
     "enabled": true,

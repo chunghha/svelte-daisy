@@ -1,17 +1,19 @@
 <script lang="ts">
-import CountryCard from '$lib/components/countrycard.svelte'
-import { createQuery } from '@tanstack/svelte-query'
+  import CountryCard from "$lib/components/countrycard.svelte";
+  import { createQuery } from "@tanstack/svelte-query";
 
-const getCountries = async () => {
-  const res = await fetch('https://restcountries.com/v3.1/all')
+  const getCountries = async () => {
+    const res = await fetch(
+      "https://restcountries.com/v3.1/all?fields=flags,name,capital,population",
+    );
 
-  return await res.json()
-}
+    return await res.json();
+  };
 
-const query = createQuery({
-  queryKey: ['countries'],
-  queryFn: getCountries,
-})
+  const query = createQuery({
+    queryKey: ["countries"],
+    queryFn: getCountries,
+  });
 </script>
 
 <svelte:head>
