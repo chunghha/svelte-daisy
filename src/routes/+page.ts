@@ -1,5 +1,5 @@
-import '@fontsource/fira-mono/index.css'
-import '@fontsource/mulish/index.css'
-import '@fontsource/tienne/index.css'
+import '@fontsource/fira-mono'
+import '@fontsource/mulish'
+import '@fontsource/tienne'
 
 export const prerender = true
